@@ -1,0 +1,54 @@
+# 📦 Resurse pentru PCB – Automatizare Solar 🌱🔌
+
+## 🧰 Unelte pentru proiectare PCB (foarte recomandate)
+- [EasyEDA (gratuit, online)](https://easyeda.com/) – ideal pentru începători; ai acces direct la librării, poți comanda PCB-ul direct din interfață.
+- [KiCad (open-source, avansat)](https://kicad.org/) – bun dacă vrei control complet și o soluție profesională.
+- [Fritzing (vizual, mai simplu)](https://fritzing.org/) – bun pentru prototipuri educaționale, dar limitat tehnic.
+
+## 🎥 Tutoriale recomandate (începători)
+- [🔗 YouTube: How to design a PCB in 30 min (EasyEDA)](https://www.youtube.com/watch?v=BTz_MH3hWrM)
+- [📘 EasyEDA Official Guide](https://docs.easyeda.com/en/Introduction/Introduction-to-EasyEDA/)
+- [📘 Ghid KiCad pentru începători](https://techexplorations.com/guides/kicad/)
+
+---
+
+## 🛍️ De unde poți cumpăra componente (porți logice, relee, ESP, senzori)
+
+### 🔌 Magazine internaționale
+- [LCSC Electronics](https://lcsc.com) – ideal pentru porți logice (74HCxx), senzori, ESP32, relee. Super ieftin.
+- [AliExpress](https://www.aliexpress.com) – pentru module deja asamblate, ideal pentru prototipuri.
+- [Mouser](https://mouser.ro) & [Digi-Key](https://digikey.ro) – profesional, dar mai scump.
+
+### 🇷🇴 Magazine din România
+- [Robofun.ro](https://www.robofun.ro) – bun pentru module ESP, senzori, accesorii Arduino.
+- [TME România](https://www.tme.eu/ro/) – foarte bun pentru piese serioase (porți logice, relee, conectori, surse).
+- [Conectica.ro](https://www.conectica.ro) – accesorii, fire, conectori.
+
+---
+
+## 🖨️ Unde comanzi PCB-ul tău
+
+- [JLCPCB](https://jlcpcb.com) – direct integrat cu EasyEDA, foarte ieftin (~2–5 USD pentru 5 plăci).
+- [PCBWay](https://www.pcbway.com) – alternativă foarte bună, ușor de folosit.
+- [Eurocircuits](https://www.eurocircuits.com/) – varianta profesională în Europa, dar mai scump.
+
+---
+
+## 💡 Sfaturi pentru PCB-ul tău (automatizare solar)
+
+- **Header-uri detașabile pentru ESP/Arduino** → ca să le poți schimba ușor
+- **Găuri M2/M3** pentru montare Raspberry Pi deasupra
+- **Conectori screw terminal** pentru senzori, pompe, ventilație
+- **Circuit de încărcare solară + baterie Li-Ion** (poți folosi module TP4056 sau integra direct pe PCB)
+- **Indicatori LED** pentru starea sistemului
+
+---
+
+## 🗂️ Recomandare organizare proiect (minim)
+```shell
+automatizare-solar/
+├── hardware/
+│   ├── schema_easyeda.json
+│   ├── pcb_layout.json
+│   └── lista_componente.txt
+├── RESURSE_PCB_AUTOMATIZARE.md

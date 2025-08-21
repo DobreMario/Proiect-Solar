@@ -104,25 +104,49 @@ Construirea unui sistem complet automatizat pentru gestionarea unui solar, folos
 
 ---
 
-## 📁 Structură recomandată GitHub
+## 🌿 Modul de Fertilizare Automată
 
-```
-/solar-automatizat-inteligent
-├── hardware/
-│   ├── breadboard_design.fzz
-│   └── pcb_schematic.kicad_pcb
-├── firmware/
-│   └── main.ino
-├── python-ml/
-│   ├── model.pkl
-│   ├── model_trainer.py
-│   └── api_server.py
-├── dashboard/
-│   └── config_dashboard.json
-├── docs/
-│   └── README.md
-└── README.md
-```
+Pe lângă udare și controlul mediului (ventilație, temperatură, umiditate), plantele au nevoie și de **nutrienți**.  
+În cadrul sistemului propus, fertilizarea se face automat prin integrarea unor soluții naturale, folosind principii de **fertigare**.
+
+### 🔧 Cum funcționează
+
+1. **Rezervor separat** – soluția nutritivă lichidă (ex. ceai de compost, extract de vermicompost, macerat de urzică) este stocată într-un container dedicat.  
+2. **Pompe dozatoare / injector Venturi** – controlează cantitatea exactă de fertilizant adăugată în apa de irigare.  
+3. **Senzori EC & pH** – monitorizează concentrația nutrienților și stabilizează valoarea în intervale optime.  
+4. **Algoritm ML + reguli de siguranță** – decide când și cât fertilizant se adaugă, în funcție de:  
+   - stadiul de dezvoltare al plantei,  
+   - umiditatea solului,  
+   - valorile EC/pH,  
+   - acțiunile propuse de utilizatori.  
+5. **Feedback loop** – după fertilizare, senzorii verifică din nou EC/pH pentru a confirma că soluția rămâne sigură pentru plante.
+
+### 🌱 Îngrășăminte naturale recomandate
+- **Ceai de compost** – echilibrat, ușor de preparat, stabil câteva zile.  
+- **Extract de vermicompost** – bogat în microorganisme benefice.  
+- **Gunoi de grajd fermentat (filtrat)** – foarte nutritiv, dar necesită filtrare pentru a evita blocarea pompelor.  
+- **Macerate de plante** (urzică, tătăneasă) – pentru azot și potasiu.  
+
+### ⚙️ Beneficii
+- Posibilitate de **automatizare completă** alături de udare.  
+- **Date de calitate** pentru ML (efectele fertilizării se pot corela cu creșterea plantei și parametrii de mediu).  
+- **Gamificare în aplicație** – utilizatorii pot decide sau sugera momentele de fertilizare, cu verificare și aplicare în condiții de siguranță.  
+
+---
+
+### 🧩 Componente suplimentare pentru modulul de fertilizare
+
+| Componentă               | Descriere                                                                 | Cantitate |
+| ------------------------ | ------------------------------------------------------------------------- | --------- |
+| Rezervor soluție nutritivă | Recipient separat pentru ceai de compost / extract de vermicompost (5–20L) | 1         |
+| Pompă dozatoare peristaltică | Permite injectarea controlată a soluției nutritive în apă               | 1         |
+| Injector Venturi (opțional) | Alternativă pasivă la pompa dozatoare, folosește diferența de presiune   | 1         |
+| Senzor EC (electroconductivitate) | Măsoară concentrația totală de nutrienți (ppm)                     | 1         |
+| Senzor pH                 | Monitorizează aciditatea soluției nutritive                               | 1         |
+| Filtru lichid fin (100–200 microni) | Evită blocarea pompei cu particule din soluții naturale         | 1         |
+| Tuburi siliconice rezistente | Pentru conectarea pompei la rezervor și la conducta de apă              | Mai multe |
+| Releu / Driver pompă      | Controlează pompa dozatoare de la ESP32                                   | 1         |
+| Recipient colector mic (opțional) | Pentru testarea soluției înainte de a intra în sistem            | 1         |
 
 ---
 
@@ -130,4 +154,3 @@ Construirea unui sistem complet automatizat pentru gestionarea unui solar, folos
 
 ---
 
-✅ Spor la automatizat! Dacă ai ajuns până aici, ești pe drumul cel bun 🛠️🌞🌿

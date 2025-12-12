@@ -47,7 +47,7 @@ Acest fișier sumarizează ideile și deciziile discutate pentru proiectul solar
 ## 6. Întrebări și decizii viitoare
 
 - Optimizarea numărului și poziției senzorilor (un senzor per plantă sau mai puțini pentru zone).
-- Gestionarea erorilor hardware (ex: fir rupt, senzor defect).
+- Gestionarea erorilor hardware (ex: fir rupt, senzor defect). (un senzor are mereu curentul peste 0A, de exemplu 4 mA);
 - Alegerea finală între releu sau alte soluții de drivere pentru pompe.
 - Dimensionarea corectă a bateriei și panourilor solare.
 
